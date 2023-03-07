@@ -1,69 +1,100 @@
-
-
     0. Positive anything is better than negative nothing
-        0-positive_or_negative.c: C program that prints whether a randomly generated number is positive or negative, followed by a new line:
-            Completion of this source code.
-            Stores a different random number every time the program is run.
-            Prints the number followed by is positive if the number is greater than 0, is zero if the number is zero, or is negative if the number is less than 0.
+        0-positive_or_negative.py: Python program that assigns a random signed number to the variable number each time it is executed and prints whether number         is positive or negative.
+        Prints the number followed by:
+            If the number is greater than 0: is positive
+            If the number is 0: is zero
+            If the number is less than 0: is negative
+            Followed by a new line.
+        Completion of this source code.
 
     1. The last digit
-        1-last_digit.c: C program that prints the last digit of a randomly generated number, followed by a new line:
-            Completion of this source code.
-            Stores a different value every time the program is run.
-            Prints the string Last digit of [number] is [last_digit] and is followed by greater than 5 if the digit is greater than 5, 0 if the digit is 0, or less than 6 and not 0 if the digit is less than 6 and not 0.
+        1-last_digit.py: Python program that assigns a random signed number to the variable number each time it is executed and prints its last digit.
+        Prints the string Last digit of [number] is [last_digit] followed by:
+            If the number is greater than 5: and is greater than 5
+            If the number is 0: and is 0
+            If the number is less than 6 and not 0: and is less than 6 and not 0
+            Followed by a new line.
+        Completion of this source code.
 
     2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
-        2-print_alphabet.c: C program that prints the alphabet in lowercase, followed by a new line, using only the putchar function exactly twice.
+        2-print_alphabet.py: Python program that prints the alphabet in lowercase, not followed by a new line.
+        Using only one print and one loop.
+        Without storing characters in variables or importing modules.
 
     3. When I was having that alphabet soup, I never thought that it would pay off
-        3-print_alphabets.c: C program that prints the alphabet in lowercase, then in uppercase, followed by a new line, using only the putchar function exactly three times.
+        3-print_alphabt.py: Python program that prints the alphabet in lowercase, followed by a new line.
+        Using only one print and one loop.
+        Without storing characters in variables or importing modules.
+        Prints every letter except for q and e.
 
-    4. alphABET
-        4-print_alphabt.c: C program that prints the alphabet in lowercase except for the letters q and e, followed by a new line, using only the putchar function exactly twice.
+    4. Hexadecimal printing
+        4-print_hexa.py: Python program that prints all numbers from 0 to 98 in decimal and hexadecimal.
+        Using only one print and one loop.
+        Without storing numbers or strings in variables or importing modules.
+        Printing format: [decimal] = [hexadecimal]
 
-    5. Numbers
-        5-print_numbers.c: C program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
+    5. 00...99
+        5-print_comb2.py: Python program that prints numbers from 0 to 99 two digits each.
+        Numbers are separated by , , except for the last number, which is followed by a new line.
+        Using no more than two print functions and one loop.
+        Without storing numbers or strings in variables or importing modules.
 
-    6. Numberz
-        6-print_numberz.c: C program that prints all single digit numbers of base 10 starting from 0, followed by a new line, using only the putchar function exactly twice without any variables of type char.
+    6. Inventing is a combination of brains and materials. The more brains you use, the less material you need
+        6-print_comb3.py: Python program that prints all possible different combinations of two digits in ascending order.
+        Numbers are separated by , , except for the last number, which is followed by a new line.
+        The two digits must be different - 01 and 10 are considered identical.
+        Using no more than three print functions and two loops.
+        Without storing numbers or strings in variables or importing modules.
 
-    7. Smile in the mirror
-        7-print_tebahpla.c: C program that prints the lowercase alphabet in reverse, followed by a new line, using only the putchar function exactly twice.
+    7. islower
+        7-islower.py: Python function that checks for lowercase characters.
+        Returns True if c is lowercase, False otherwise.
+        Without importing modules or using str.upper() or str.isupper().
 
-    8. Hexadecimal
-        8-print_base16.c: C program that prints all the numbers of base 16 in lowercase, followed by a new line, using only the putchar function exactly three times.
+    8. To uppercase
+        8-uppercase.py: Python function that prints a string in uppercase followed by a new line.
+        Using no more than two print functions and one loop.
+        Without importing modules or using str.upper() or str.isupper().
 
-    9. Patience, persistence and perspiration make an unbeatable combination for success
-        9-print_comb.c: C program that prints all possible combinations of single-digit numbers, using only the putchar function exactly four times without any variables of type char:
-            Numbers are separated by ,, followed by a space.
-            Numbers are printed in ascending order.
+    9. There are only 3 colors, 10 digits, and 7 notes; its what we do with them that's important
+        9-print_last_digit.py: Python function that prints the last digit of a number.
+        Returns the value of the last digit.
+        Without importing modules.
 
-    10. 00...99
-        10-print_comb2.c: C program that prints the numbers from 00 to 99 using only the putchar function exactly five times without any variables of type char:
-            Numbers are separated by ,, followed by a space.
-            Numbers are printed in ascending order, with two digits.
+    10. a + b
+        10-add.py: Python function that returns the addition of two integers.
+        Without importing modules.
 
-    11. Inventing is a combination of brains and materials. The more brains you use, the less material you need
-        100-print_comb3.c: C program that prints all possible different combinations of two digits using only the putchar function exactly five times without any variables of type char:
-            Numbers are separated by ,, followed by a space.
-            The two digits are different.
-            01 and 10 are considered the same combination of the two digits 0 and 1.
-            Prints only the smallest combination of two digits.
-            Numbers are printed in ascending order.
+    11. a ^ b
+        11-pow.py: Python function that returns a to the power of b.
+        Without importing modules.
 
-    12. The success combination in business is: Do what you do better... and: do more of what you do...
-        101-print_comb4.c: C program that prints all possible different combinations of three digits using only the putchar function exactly six times without any variables of type char:
-            Numbers are separated by ,, followed by a space.
-            The three digits are different.
-            012, 120, 102, 021, 201 and 210 are considered the same combination of the three digits 0, 1 and 2.
-            Prints only the smallest combination of three digits.
-            Numbers are printed in ascending order.
+    12. Fizz Buzz
+        12-fizzbuzz.py: Python function that prints the numbers from 1 to 100 followed by a space.
+        For multiples of three, Fizz is printed instead of the number.
+        For multiples of five, Buzz is printed instead of the number.
+        For multiples of three and five, FizzBuzz is printed instead of the number.
+        Without importing modules.
 
-    13. Software is eating the World
-        102-print_comb5.c: C program that prints all possible combinations of two-digit numbers using only the putchar function exactly eight times without any variables of type char:
-            Numbers range from 0 to 99.
-            Two numbers are separated by a space.
-            Numbers are printed with two digits [ie. 1 is printed as 01].
-            00 01 and 01 00 are considered the same as the combination of of the numbers 0 and 1.
-            Combinations of numbers are separated by ,, followed by a space.
-            Combinations of numbers are printed in ascending order.
+    13. Insert in sorted linked list
+        13-insert_number.c: C function that inserts a number into a sorted linked list.
+        If the function fails, returns NULL.
+        Otherwise, returns the address of the new node.
+        Helper files:
+            linked_lists.c: C functions handling linked lists for testing 13-insert_number.c (provided by Holberton School).
+            lists.h: Header file containing definitions and prototypes for all types and functions used in linked_lists.c and 13-insert_number.c.
+
+    14. Smile in the mirror
+        100-print_tebahpla.py: Python program that prints the alphabet in reverse order, alternating lowercase and uppercase, not followed by a new line.
+        Using only one print and one loop.
+        Without storing characters in variables or importing modules.
+
+    15. Remove at position
+        101-remove_char_at.py: Python function that creates a copy of a string without the character at position n.
+        Without importing modules.
+
+    16. ByteCode -> Python #2
+        102-magic_calculation.py: Python function matching exactly a bytecode provided by Holberton School.
+
+
+   
